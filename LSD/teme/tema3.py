@@ -1,61 +1,36 @@
-def progresie_aritmetica(n):
+def interval(valoare_minima, valoare_maxima):
+    if(valoare_minima > valoare_maxima):
+        return None
+    else:
+        print(valoare_minima)
+        valoare_minima += 1
+        interval(valoare_minima, valoare_maxima)
+
+def aparitie(n, cifra):
     if n == 0:
-        return 2
+        print("Cifra " + str(cifra) + " nu apare in numarul " + str(aparitie.numar))
+        return None
     else:
-        return 2 * progresie_aritmetica(n - 1) - 3
+        if(n % 10 == cifra):
+            print("Cifra " + str(cifra) + " apare in numarul " + str(aparitie.numar))
+            return None
+        aparitie(int(n / 10), cifra)
 
-def suma_recursiva(n):
-    if n == 1:
-        return 1
-    else:
-        return n + suma_recursiva(n - 1)
 
-def produsul_cifrelor(n):
-    if n == 0:
-        return 1
-    else:
-        return (n % 10) * produsul_cifrelor(int(n / 10))
-
-def numarul_cifrelor(n):
-    if n == 0:
-        return 0
-    else:
-        return 1 + numarul_cifrelor(int(n / 10))
-
-def numarul_cifrelor_pare(n):
+def numar_aparitii(n, cifra):
     if n == 0:
         return 0
     else:
-        return ( not ( (n % 10) % 2 ) ) + numarul_cifrelor_pare(int(n / 10))
-    
-def cifra_maxima(n):
+        return (n % 10 == cifra) + numar_aparitii(int(n / 10), cifra)
+
+def conversie_zecimal_binar(n):
     if n == 0:
-        return 0
+        return ""
     else:
-        return max( (n % 10), (cifra_maxima(int(n/10))) )
+        return conversie_zecimal_binar(int(n / 2)) + str(n % 2)
 
-def ridicare_la_putere(a, n):
-    if n == 0:
-        return 1
-    else:
-        return a * ridicare_la_putere(a, n - 1)
+numar = 1011489193
+cifra = 1
+aparitie.numar = numar
+print("Cifra " + str(cifra) + " apare de " + str(numar_aparitii(numar, cifra)) + " ori in numarul " + str(numar))
 
-def factorial(n):
-    if n == 0:
-        return 1
-    else:
-        return n * factorial(n - 1)
-
-def suma_Taylor(x, n, termen_putere, termen_factorial):
-    if n == 0:
-        return 1
-    else:
-        return (termen_putere / termen_factorial) + suma_Taylor(x, n - 1, (termen_putere / x), (termen_factorial / n))
-
-def serie_Taylor(x, n):
-    termen_putere = ridicare_la_putere(x, n)
-    termen_factorial = factorial(n)
-
-    return suma_Taylor(x, n, termen_putere, termen_factorial)
-
-print(serie_Taylor(10, 171))
