@@ -3,21 +3,21 @@
 
 void afisare_patrat(uint32_t n){
   for(uint32_t i = 0; i < n; ++i){
-    printf("*");
+    printf("* ");
     
     if(i == 0 || i == n - 1){
       for(uint32_t j = 1; j < n - 1; ++j){
-	printf("*");
+	printf("* ");
       }
     }
 
     else {
-      for(uint32_t j = 1; j < n - 1; ++j){
+      for(uint32_t j = 1; j < 2*n - 3; ++j){
 	printf(" ");
       }
     }
 
-    printf("*\n");
+    printf("* \n");
     
   }
 }
