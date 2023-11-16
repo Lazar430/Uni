@@ -1,6 +1,13 @@
 #include<stdio.h>
 #include<stdint.h>
 
+#define to_string(argument) # argument
+
+void citire_numar(uint32_t* numar, char* nume_variabila){
+  printf("%s = ", nume_variabila);
+  scanf("%d", numar);
+}
+
 void afisare_binar_uint8(uint8_t numar){
   uint8_t masca = 1 << 7;
   uint8_t masca_de_separare = 1 << 3;
