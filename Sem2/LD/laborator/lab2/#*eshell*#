@@ -1,0 +1,4 @@
+~/Uni/Sem2/LD/laborator/lab2 $ acpi
+Battery 0: Discharging, 30%, 00:28:16 remaining
+~/Uni/Sem2/LD/laborator/lab2 $ shutdown now
+~/Uni/Sem2/LD/laborator/lab2 $ 

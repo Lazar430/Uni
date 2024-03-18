@@ -1,0 +1,5 @@
+|led2sw
+led_o <= sw_i.DB_MAX_OUTPUT_PORT_TYPE
+sw_i => led_o.DATAIN
+
+

@@ -1,0 +1,19 @@
+function x = grad_conj(A, b, x0, k)
+
+d = A - b * x;
+
+r = d;
+
+for k = 0 : n - 1
+    
+    if r == 0 
+        break;
+    end
+
+    alpha = (r' * r) \ (d' * A * d);
+
+    x = x + alpha * d;
+
+    r_nou = r - alpha * A * d;
+
+    beta = (r_nou' * r_nou) \ (r' * r);

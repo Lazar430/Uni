@@ -1,0 +1,34 @@
+\documentclass[12pt, letterpaper]{article}
+
+\begin{document}
+
+\Sectiune{0.1}{Disciplina teoriei circuitelor}
+
+Prin \emfaza{circuit electric}{cyan} \^{i}n\cb{t}elegem orice sistem interconectat de dispozitive electronice.
+Exemple familiare de dispozitive electronice sunt rezistorii, bobinele, condensatoarele, diodele, tranzistorii,
+amplificatorii opera\cb{t}ionali, bateriile, transformatoarele, motoarele electrice, generatoarele electrice etc.
+
+Scopul teoriei elaborate \^{i}n jurul circuitelor este de a prezice comportamenul lor electric \cb{s}i de a reduce
+pe c\^{a}t posibil costurile de orice natur\u{a} \cb{s}i de a \^{i}mbun\u{a}t\u{a}\cb{t}i performan\cb{t}a acestora
+sub orice condi\cb{t}ii de operare (temperatur\u{a}, deteriorare, posibile defecte etc.).
+
+\Sectiune{0.2}{Modelul aproximat}
+
+Fie $d$ dimensiunea maxim\u{a} a unui circuit, $\Delta t$ timpul de interes minim \cb{s}i $c$ viteza luminii. Teoria
+aproximativ\u{a} a circuitelor se ocup\u{a} cu circuite pentru care $d << c \cdot \Delta t$, astfel \^{i}nc\^{a}t
+putem considera propagarea radia\cb{t}iei de-a lungul circuitului ca fiind instantanee. Aproximarea fun\cb{t}ioneaz\u{a}
+\cb{s}i pentru circuite de dimensiuni foarte largi: fie $\lambda$ lungimea de und\u{a} minim\u{a} de interes; dac\u{a}
+$d << \lambda$, atunci circuitul poate fi aproximat la un model ideal \^{i}n care radia\cb{t}ia se propag\u{a}
+instantaneu. \^{I}ntr-un limbaj mai matematic, \^{i}ntr-un circuit idealizat, curentul $i(t)$ prin bornele oric\u{a}rui
+dispozitiv \cb{s} diferen\cb{t}a de poten\cb{t}ial $v(t)$ de-a lungul circuitului sunt, \^{i}n orice moment de timp $t$,
+bine definite. Aceast\u{a} reducere este analog la punctul material din mecanica clasic\u{a}, astfel c\u{a} orientarea
+\cb{s}i pozi\cb{t}ionarea elementelor componente pot fi ignorate.
+
+\Sectiune{0.3}{Elementele circuitului}
+
+Prin \emfaza{dispozitiv electronic} \^{i}n\cb{t}elegem obiecte fizice legate prin fire, de regul\u{a}, idealizate la
+nivel teoretic ca fiind perfect conductoare. Dispozitivele \^{i}n sine sunt de asemnea conceptualizate prin intermediul
+unor modele ideale: rezistorul ($v = Ri$), bobina ($v = L di/dt$), capacitorul ($i = C dv/dt$) etc.
++
+
+\end{document}

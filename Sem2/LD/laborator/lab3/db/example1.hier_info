@@ -1,0 +1,39 @@
+|RCA
+c_out <= FAC:F2.c_out
+s[0] <= FAC:F1.s
+s[1] <= FAC:F2.s
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+b[0] => b0.IN1
+b[1] => b1.IN1
+c_in => ~NO_FANOUT~
+
+
+|RCA|FAC:F1
+a => s.IN0
+a => c_out.IN0
+a => c_out.IN0
+b => s.IN1
+b => c_out.IN1
+b => c_out.IN0
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RCA|FAC:F2
+a => s.IN0
+a => c_out.IN0
+a => c_out.IN0
+b => s.IN1
+b => c_out.IN1
+b => c_out.IN0
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
