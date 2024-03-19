@@ -1,7 +1,4 @@
-AM/teorie/notiuni_generale
-AM/teorie/siruri_si_serii_numerice
-PC/teme/build
-PC/C/main
+Sem1/Electro/resurse/leon_circuits.pdf
 *.aux
 *.tex
 *.log
