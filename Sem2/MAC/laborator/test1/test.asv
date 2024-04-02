@@ -1,0 +1,11 @@
+format long;
+
+f = @(x) x^5 + x + 1;
+%fplot(f);
+%grid on;
+
+%bisection(f, -2, -1.5, 0.000001)
+%bisection(f, -1, 1, 0.000001)
+%bisection(f, 1, 2, 0.000001)
+
+secant(f, -2, -1.8, )

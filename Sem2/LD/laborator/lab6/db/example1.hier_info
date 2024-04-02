@@ -1,0 +1,25 @@
+|compare
+a[0] => ge.IN0
+a[0] => ge.IN0
+a[0] => le.IN0
+a[0] => le.IN0
+a[1] => ge.IN1
+a[1] => ge.IN0
+a[1] => ge.IN0
+a[1] => le.IN0
+a[1] => le.IN0
+a[1] => le.IN1
+b[0] => le.IN0
+b[0] => le.IN1
+b[0] => ge.IN1
+b[0] => ge.IN0
+b[1] => le.IN1
+b[1] => le.IN1
+b[1] => le.IN1
+b[1] => ge.IN1
+b[1] => ge.IN1
+b[1] => ge.IN1
+ge <= ge.DB_MAX_OUTPUT_PORT_TYPE
+le <= le.DB_MAX_OUTPUT_PORT_TYPE
+
+

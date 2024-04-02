@@ -4,7 +4,7 @@ module barrel_shifter(input [3:0]a, input [1:0]selector, output [3:0]out)
   assign mutex_l01 = {1'b0, a[3], a[2], a[1]};
 
    wire [3:0]mutex_l1;
-   wire [3:0] mutex_l11;
+   wire [3:0]mutex_l11;
    assign mutex_l11 = {1'b0, 1'b0, mutex_l1[3], mutex_l1[2]};
 
    genvar     i;
