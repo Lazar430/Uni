@@ -32,19 +32,19 @@
 					"strict" : false
 				},
 				{
-					"name" : "c[2]",
+					"name" : "i[2]",
 					"strict" : false
 				},
 				{
-					"name" : "c[0]",
+					"name" : "i[0]",
 					"strict" : false
 				},
 				{
-					"name" : "c[1]",
+					"name" : "i[3]",
 					"strict" : false
 				},
 				{
-					"name" : "c[3]",
+					"name" : "i[1]",
 					"strict" : false
 				}
 			]

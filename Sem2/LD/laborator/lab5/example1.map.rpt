@@ -1,5 +1,5 @@
 Analysis & Synthesis report for example1
-Wed Mar 20 11:42:00 2024
+Wed Apr 24 10:06:45 2024
 Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
 
 
@@ -43,7 +43,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Mar 20 11:42:00 2024          ;
+; Analysis & Synthesis Status        ; Successful - Wed Apr 24 10:06:45 2024          ;
 ; Quartus Prime Version              ; 23.1std.0 Build 991 11/28/2023 SC Lite Edition ;
 ; Revision Name                      ; example1                                       ;
 ; Top-level Entity Name              ; hex                                            ;
@@ -198,7 +198,7 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;            ;
 ; Embedded Multiplier 9-bit elements          ; 0          ;
 ;                                             ;            ;
-; Maximum fan-out node                        ; c[2]~input ;
+; Maximum fan-out node                        ; i[2]~input ;
 ; Maximum fan-out                             ; 7          ;
 ; Total fan-out                               ; 46         ;
 ; Average fan-out                             ; 1.59       ;
@@ -260,7 +260,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
-    Info: Processing started: Wed Mar 20 11:41:54 2024
+    Info: Processing started: Wed Apr 24 10:06:40 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off example1 -c example1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -276,9 +276,9 @@ Info (21057): Implemented 18 device resources after synthesis - the final resour
     Info (21059): Implemented 7 output pins
     Info (21061): Implemented 7 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 377 megabytes
-    Info: Processing ended: Wed Mar 20 11:42:00 2024
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:15
+    Info: Peak virtual memory: 382 megabytes
+    Info: Processing ended: Wed Apr 24 10:06:45 2024
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:13
 
 

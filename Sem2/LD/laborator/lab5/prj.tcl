@@ -10,10 +10,10 @@ set_global_assignment -name SDC_FILE example1.sdc
 set_global_assignment -name TOP_LEVEL_ENTITY hex
 set_location_assignment -to clk PIN_AH10
 
-set_location_assignment PIN_F15 -to c[3]   ;
-set_location_assignment PIN_B14 -to c[2]   ;
-set_location_assignment PIN_A14 -to c[1]   ;
-set_location_assignment PIN_A13 -to c[0]   ;
+set_location_assignment PIN_F15 -to i[3]   ;
+set_location_assignment PIN_B14 -to i[2]   ;
+set_location_assignment PIN_A14 -to i[1]   ;
+set_location_assignment PIN_A13 -to i[0]   ;
 
 set_location_assignment PIN_C14  -to seg[6]  ;
 set_location_assignment PIN_E15  -to seg[5]  ;

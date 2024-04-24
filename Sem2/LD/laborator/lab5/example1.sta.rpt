@@ -1,5 +1,5 @@
 Timing Analyzer report for example1
-Wed Mar 20 11:42:13 2024
+Wed Apr 24 10:06:58 2024
 Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
 
 
@@ -96,7 +96,7 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.5%      ;
+;     Processors 2-4         ;   0.4%      ;
 +----------------------------+-------------+
 
 
@@ -105,7 +105,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------+--------+--------------------------+
 ; SDC File Path ; Status ; Read at                  ;
 +---------------+--------+--------------------------+
-; example1.sdc  ; OK     ; Wed Mar 20 11:42:11 2024 ;
+; example1.sdc  ; OK     ; Wed Apr 24 10:06:56 2024 ;
 +---------------+--------+--------------------------+
 
 
@@ -266,10 +266,10 @@ No synchronizer chains to report.
 +---------------------+-----------------------+-----------------+-----------------+
 ; Pin                 ; I/O Standard          ; 10-90 Rise Time ; 90-10 Fall Time ;
 +---------------------+-----------------------+-----------------+-----------------+
-; c[2]                ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
-; c[0]                ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
-; c[1]                ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
-; c[3]                ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
+; i[2]                ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
+; i[0]                ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
+; i[3]                ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
+; i[1]                ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
 ; ~ALTERA_TMS~        ; 2.5 V Schmitt Trigger ; 2000 ps         ; 2000 ps         ;
 ; ~ALTERA_TCK~        ; 2.5 V Schmitt Trigger ; 2000 ps         ; 2000 ps         ;
 ; ~ALTERA_TDI~        ; 2.5 V Schmitt Trigger ; 2000 ps         ; 2000 ps         ;
@@ -365,10 +365,10 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +------------+--------------------------------------------------------------------------------------+
 ; Input Port ; Comment                                                                              ;
 +------------+--------------------------------------------------------------------------------------+
-; c[0]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; c[1]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; c[2]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; c[3]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; i[0]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; i[1]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; i[2]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; i[3]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +------------+--------------------------------------------------------------------------------------+
 
 
@@ -392,10 +392,10 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +------------+--------------------------------------------------------------------------------------+
 ; Input Port ; Comment                                                                              ;
 +------------+--------------------------------------------------------------------------------------+
-; c[0]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; c[1]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; c[2]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; c[3]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; i[0]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; i[1]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; i[2]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; i[3]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +------------+--------------------------------------------------------------------------------------+
 
 
@@ -420,7 +420,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
-    Info: Processing started: Wed Mar 20 11:42:10 2024
+    Info: Processing started: Wed Apr 24 10:06:55 2024
 Info: Command: quartus_sta example1 -c example1
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -472,8 +472,8 @@ Info (332140): No Minimum Pulse Width paths to report
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 528 megabytes
-    Info: Processing ended: Wed Mar 20 11:42:13 2024
+    Info: Peak virtual memory: 512 megabytes
+    Info: Processing ended: Wed Apr 24 10:06:58 2024
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:03
 
